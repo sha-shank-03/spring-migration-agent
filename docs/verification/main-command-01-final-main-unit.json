@@ -1,0 +1,21 @@
+{
+  "slug": "spring-migration-agent",
+  "label": "final-main-unit",
+  "argv": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "mvnw.cmd",
+    "-B",
+    "-o",
+    "test"
+  ],
+  "cwd": "<local-portfolio>\\spring-migration-agent",
+  "started_at_utc": "2026-10-08T02:54:49.008463+00:00",
+  "duration_seconds": 8.907,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": "[INFO] Scanning for projects...\n[INFO] \n[INFO] ----------------< dev.springmig:spring-migration-agent >----------------\n[INFO] Building Spring Migration Agent 0.1.0\n[INFO]   from pom.xml\n[INFO] --------------------------------[ jar ]---------------------------------\n[INFO] \n[INFO] --- resources:3.3.1:resources (default-resources) @ spring-migration-agent ---\n[INFO] skip non existing resourceDirectory <local-portfolio>\\spring-migration-agent\\src\\main\\resources\n[INFO] \n[INFO] --- compiler:3.14.1:compile (default-compile) @ spring-migration-agent ---\n[INFO] Nothing to compile - all classes are up to date.\n[INFO] \n[INFO] --- resources:3.3.1:testResources (default-testResources) @ spring-migration-agent ---\n[INFO] skip non existing resourceDirectory <local-portfolio>\\spring-migration-agent\\src\\test\\resources\n[INFO] \n[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ spring-migration-agent ---\n[INFO] Nothing to compile - all classes are up to date.\n[INFO] \n[INFO] --- surefire:3.5.4:test (default-test) @ spring-migration-agent ---\n[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider\n[INFO] \n[INFO] -------------------------------------------------------\n[INFO]  T E S T S\n[INFO] -------------------------------------------------------\n[INFO] Running dev.springmig.AuthorityTest\n[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.983 s -- in dev.springmig.AuthorityTest\n[INFO] Running dev.springmig.ControllerTest\nhybrid: interrupted; snapshot=51e7259f1a78ffc82f632bbe85ea6e4c66775ba9e2dfa34881963d68c5355107; proposals=0; report=<local-user>\\AppData\\Local\\Temp\\junit-18275012568734151941\\interrupted\\report.json\n[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.608 s -- in dev.springmig.ControllerTest\n[INFO] Running dev.springmig.ProcessesTest\n[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.846 s -- in dev.springmig.ProcessesTest\n[INFO] Running dev.springmig.TranscriptTest\n[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s -- in dev.springmig.TranscriptTest\n[INFO] \n[INFO] Results:\n[INFO] \n[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0\n[INFO] \n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD SUCCESS\n[INFO] ------------------------------------------------------------------------\n[INFO] Total time:  7.117 s\n[INFO] Finished at: 2026-10-08T08:24:57+05:30\n[INFO] ------------------------------------------------------------------------\n",
+  "stderr": "",
+  "scope": "independently executed by main; result alone does not imply full acceptance"
+}

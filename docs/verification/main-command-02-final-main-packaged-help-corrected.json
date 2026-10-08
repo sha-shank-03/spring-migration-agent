@@ -1,0 +1,19 @@
+{
+  "slug": "spring-migration-agent",
+  "label": "final-main-packaged-help-corrected",
+  "argv": [
+    "java",
+    "-Xmx2g",
+    "-jar",
+    "<local-coordination>\\acceptance\\spring-migration-agent\\final-main-static-20261008\\packaged-cli\\spring-migration-agent.jar",
+    "help"
+  ],
+  "cwd": "<local-portfolio>\\spring-migration-agent",
+  "started_at_utc": "2026-10-08T02:55:49.513464+00:00",
+  "duration_seconds": 0.11,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": "M2: demo|compare|migrate|prepare-cache [--fixture mvc-validation|mechanical-only|unresolved-repair] [--mode recipes-only|agent-only|hybrid] [--agent mock|replay --replay PATH] [--offline] --out NEW_PATH. Historical unsupported Boot 2.7.18 -> 3.0.13 fixture only; zero live model calls. Budgets: --max-proposals 1..3 --max-actions 1..20 --command-seconds 1..180 --run-seconds 1..900.\n",
+  "stderr": "",
+  "scope": "independently executed by main; result alone does not imply full acceptance"
+}

@@ -1,0 +1,52 @@
+name: Local migration harness checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spring-migration-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    # Standard public-repository hosted runners; no paid model/service or deployment.
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: true
+      max-parallel: 1
+      matrix:
+        os: [ubuntu-24.04, windows-2025]
+    env:
+      GIT_CONFIG_COUNT: '1'
+      GIT_CONFIG_KEY_0: core.autocrlf
+      GIT_CONFIG_VALUE_0: 'false'
+    steps:
+      - name: Read-only checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Java 17
+        uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '17.0.18+8'
+          check-latest: false
+      - name: Clean build and existing tests
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if ($IsWindows) { & .\mvnw.cmd -B clean verify } else { & sh ./mvnw -B clean verify }
+          if ($LASTEXITCODE -ne 0) { throw 'Maven verify failed' }
+      - name: Assert modes, replay, failures and preserved evidence
+        shell: pwsh
+        run: ./scripts/demo.ps1 -Extended -Out outputs/ci-review
+      - name: Assemble review-only source, CLI and notices
+        shell: pwsh
+        run: ./scripts/package-review.ps1 -Out outputs/ci-package
+      # No upload/release/deploy action, package registry, provider key or secret input.

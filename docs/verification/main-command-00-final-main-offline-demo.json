@@ -1,0 +1,21 @@
+{
+  "slug": "spring-migration-agent",
+  "label": "final-main-offline-demo",
+  "argv": [
+    "<local-user>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "-NoProfile",
+    "-File",
+    "scripts/demo.ps1",
+    "-Offline",
+    "-Out",
+    "outputs/main-final-review-20261008"
+  ],
+  "cwd": "<local-portfolio>\\spring-migration-agent",
+  "started_at_utc": "2026-10-08T02:49:52.494730+00:00",
+  "duration_seconds": 266.359,
+  "exit_code": 0,
+  "timed_out": false,
+  "stdout": "recipes-only: verification_failed; snapshot=51e7259f1a78ffc82f632bbe85ea6e4c66775ba9e2dfa34881963d68c5355107; proposals=0; report=<local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\comparison\\recipes-only\\report.json\nagent-only: verified; snapshot=51e7259f1a78ffc82f632bbe85ea6e4c66775ba9e2dfa34881963d68c5355107; proposals=2; report=<local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\comparison\\agent-only\\report.json\nhybrid: verified; snapshot=51e7259f1a78ffc82f632bbe85ea6e4c66775ba9e2dfa34881963d68c5355107; proposals=1; report=<local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\comparison\\hybrid\\report.json\ncomparison: identical snapshots=true, expected fixture outcome=true\nhybrid: verified; snapshot=51e7259f1a78ffc82f632bbe85ea6e4c66775ba9e2dfa34881963d68c5355107; proposals=1; report=<local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\replay with spaces\\report.json\nhybrid: offline_cache_miss; snapshot=51e7259f1a78ffc82f632bbe85ea6e4c66775ba9e2dfa34881963d68c5355107; proposals=0; report=<local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\cache-miss\\report.json\nhybrid: command_timeout; snapshot=51e7259f1a78ffc82f632bbe85ea6e4c66775ba9e2dfa34881963d68c5355107; proposals=0; report=<local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\timeout\\report.json\nhybrid: policy_denied; snapshot=87b5ad80e9158ce336d2016b8d9065285766fcb9d35a621f19dd781b5675fddb; proposals=0; report=<local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\replay-mismatch\\report.json\nReview assertions passed: <local-portfolio>\\spring-migration-agent\\outputs\\main-final-review-20261008\\summary.json\n",
+  "stderr": "",
+  "scope": "independently executed by main; result alone does not imply full acceptance"
+}

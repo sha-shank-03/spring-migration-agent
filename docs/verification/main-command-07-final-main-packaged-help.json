@@ -1,0 +1,19 @@
+{
+  "slug": "spring-migration-agent",
+  "label": "final-main-packaged-help",
+  "argv": [
+    "java",
+    "-Xmx2g",
+    "-jar",
+    "<local-coordination>\\acceptance\\spring-migration-agent\\final-main-static-20261008\\packaged-cli\\spring-migration-agent.jar",
+    "--help"
+  ],
+  "cwd": "<local-portfolio>\\spring-migration-agent",
+  "started_at_utc": "2026-10-08T02:55:14.155677+00:00",
+  "duration_seconds": 0.109,
+  "exit_code": 3,
+  "timed_out": false,
+  "stdout": "",
+  "stderr": "unsupported_input/tool_error: Unknown command: --help\n",
+  "scope": "independently executed by main; result alone does not imply full acceptance"
+}

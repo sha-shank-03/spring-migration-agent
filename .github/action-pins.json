@@ -1,0 +1,22 @@
+[
+  {
+    "repository": "actions/checkout",
+    "version": "v7.0.1",
+    "commit": "3d3c42e5aac5ba805825da76410c181273ba90b1",
+    "objectType": "commit",
+    "releaseUrl": "https://github.com/actions/checkout/releases/tag/v7.0.1",
+    "tagRefUrl": "https://api.github.com/repos/actions/checkout/git/refs/tags/v7.0.1",
+    "source": "GitHub official actions repository tag API",
+    "retrievedAt": "2026-10-08T02:06:13.1917542Z"
+  },
+  {
+    "repository": "actions/setup-java",
+    "version": "v6.0.1",
+    "commit": "de7274f081f381c8f8158605e0321c36c376e2e6",
+    "objectType": "commit",
+    "releaseUrl": "https://github.com/actions/setup-java/releases/tag/v6.0.1",
+    "tagRefUrl": "https://api.github.com/repos/actions/setup-java/git/refs/tags/v6.0.1",
+    "source": "GitHub official actions repository tag API",
+    "retrievedAt": "2026-10-08T02:06:13.9868894Z"
+  }
+]

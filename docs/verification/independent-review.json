@@ -1,0 +1,35 @@
+{
+  "review_id": "FINAL",
+  "reviewed_at_utc": "2026-10-08T02:57:51.388244+00:00",
+  "status": "passed",
+  "assertions": "Fresh main18 meaningful authority/controller/process/transcript unit tests pass with physical Surefire XML18/0/0/0. Documented final offline demo passes seven reports and24 actual Maven-o invocations: recipes-only2 with5/6 HTTP, agent-only0 and hybrid0 with6/6, same-snapshot mock comparison, recorded replay0 with same physical candidate, cold-cache4, one-second timeout4 and changed-source replay6/no proposals. Main rechecks all physical source/protected/candidate digests, original test/contract expectations, literal HTTP results, three actual tests per successful stage, fresh distinct final trees, budgets and exact applied patch tree. Current70-entry source/CLI ZIP matches actual files/hash; extracted packaged help command0. Zero owned/unreadable Java processes.399 actual cache JAR hashes/sizes and inherited cached POM license declarations independently checked.",
+  "inspection": "Main inspected gateway/POM/path/preimage/staging/rollback, protected verifier, mock/replay/controller/process boundaries during M1/M2. Final inspected full demo/helper/package/audit scripts, architecture/contracts/contribution/limits, README entry points, Apache project/wrapper/runtime notices and399-artifact attribution scope. Actual package source/CLI bytes, compiled runtime class bytes, immutable official checkout/setup-java source/licenses and serial read-only standard public Win/Linux prepared CI checked. Fresh unit run supplies final test evidence instead of relying on worker unchanged-source assertions or an absent prior class-byte snapshot.",
+  "limitations": "Historical unsupported Boot2.7.18 to3.0.13 single-module trusted fixture only; real OpenRewrite/Maven/HTTP but scripted mock and recorded replay, zero live models. Copied workspace is not OS sandbox; cooperative agent deadlines/captured descendants do not guarantee hostile code/OS-force-kill cleanup or arbitrary apps. Final demo is core offline, not fresh Extended mechanical/unresolved, online warming, POSIX/Linux/hostedCI/Temurin provisioning or current-release migration advice. Those M2 cases remain historical executed evidence where documented. Fresh18 tests use existing compiled classes independently matched to final JAR; no fresh clean rebuild/reproducible-build/legal/security/performance certification claimed.399 cache declarations do not mean399 distributed CLI dependencies; source-JAR URLs unverified. Main first packaged probe used unsupported --help, correctly exited3; source-supported help then0, both receipts retained. Original main M2 stdout truncation limitation remains preserved. No new downloads/push/publication/deploy.",
+  "source_file_count": 80,
+  "repository": "spring-migration-agent",
+  "scope": "Coordinating-agent review, separate from implementation worker; not third-party certification.",
+  "local_path_redaction": "Personal host prefixes replaced. Original receipt hashes below describe the unredacted local source; exports have separate hashes.",
+  "publication_change_scope": "README/AGENTS/contributor/context/evidence exports and ignore/attribute portability only. Runtime, tests, fixtures and dependency pins remain as accepted.",
+  "command_receipt_exports": [
+    {
+      "path": "docs/verification/main-command-00-final-main-offline-demo.json",
+      "source_receipt_sha256": "c753eb42d608ef4ed0b009d93ac58e321b05c8095f912f5e5ce2e3534fb1c31b",
+      "export_sha256": "9d633d52e56ffacf76fcc424ecc619ee67bc41ada0a433c3cc734de2d55777a1"
+    },
+    {
+      "path": "docs/verification/main-command-01-final-main-unit.json",
+      "source_receipt_sha256": "028212f2cc7c0c91ecbcbfcd59bc8bfbc5698917e24367b98e9c203905ba652f",
+      "export_sha256": "33d07e6f04b0378d60343fc8438f23af1d62361b8e058f87494ef34b6f7c495d"
+    },
+    {
+      "path": "docs/verification/main-command-02-final-main-packaged-help-corrected.json",
+      "source_receipt_sha256": "cae6dbffa02b3a16e64f264d4c3d3ccbdb020b24bb6406854da938c3e55a5d65",
+      "export_sha256": "e55810de51c2f753d4bb1991d5989f5463ba2f55477c73023a529bab545728c5"
+    },
+    {
+      "path": "docs/verification/main-command-07-final-main-packaged-help.json",
+      "source_receipt_sha256": "6513d65fe5c900dcfbc3f659c8f1f5bc8a2ad2dc8385e48cd658a94dd7503a9a",
+      "export_sha256": "de63b039a9cfadf234eeb16733bd1f9cc5a61005f7a08cc90107f25fdb010795"
+    }
+  ]
+}

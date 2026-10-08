@@ -1,0 +1,23 @@
+Spring Migration Agent
+Copyright 2026 Spring Migration Agent contributors
+
+Includes modified Apache Maven Wrapper 3.3.4 startup scripts and its wrapper JAR,
+licensed under the Apache License, Version 2.0.
+https://github.com/apache/maven-wrapper
+Modifications: default wrapper cache moved inside this repository; Windows
+and POSIX startup skips machine/user Maven RC scripts. Original license headers are retained.
+
+The packaged CLI includes Gson 2.13.2 and Error Prone annotations 2.41.0,
+licensed under Apache-2.0. Upstream licenses/notices are retained under
+third-party/ and in the dependency inventory.
+https://github.com/google/gson
+https://github.com/google/error-prone
+
+Apache Maven/OpenRewrite/Spring/JUnit and other build/test/application
+dependencies are obtained externally through the isolated Maven cache.
+Their notices are not overwritten by this project's license. See DEPENDENCIES.md.
+
+Prepared CI references MIT-licensed actions/checkout v7.0.1 and
+actions/setup-java v6.0.1 at immutable upstream commits. License copies are
+retained under third-party/ci-*-LICENSE. These actions are external CI tools,
+not dependencies bundled into the CLI. See docs/CI.md and .github/action-pins.json.

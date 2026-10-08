@@ -1,0 +1,10 @@
+/work/tools/
+/work/m2/
+/work/maven-home/
+/work/runs/
+/target/
+/outputs/
+**/target/
+
+# Generated/bootstrap research remains local; source attribution is in third-party/.
+/work/

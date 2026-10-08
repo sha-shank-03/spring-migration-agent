@@ -1,0 +1,22 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: springmig.recipes.MvcValidationBoot3_0_13
+displayName: Scoped MVC validation migration to Boot 3.0.13
+description: Exact historical migration for the declared MVC and validation fixture surface. Revision 1.
+recipeList:
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: javax.validation
+      newPackageName: jakarta.validation
+      recursive: true
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: javax.servlet
+      newPackageName: jakarta.servlet
+      recursive: true
+  - org.openrewrite.properties.ChangePropertyKey:
+      oldPropertyKey: server.max-http-header-size
+      newPropertyKey: server.max-http-request-header-size
+      relaxedBinding: false
+  - org.openrewrite.maven.UpgradeParentVersion:
+      groupId: org.springframework.boot
+      artifactId: spring-boot-starter-parent
+      newVersion: 3.0.13

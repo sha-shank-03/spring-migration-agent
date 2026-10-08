@@ -1,0 +1,11 @@
+{
+  "schema": "springmig.http-contract/v1",
+  "checks": [
+    {"id":"get_greeting","method":"GET","path":"/greeting","expectedStatus":200,"expectedBody":"Hello, visitor"},
+    {"id":"get_trailing_slash","method":"GET","path":"/greeting/","expectedStatus":200,"expectedBody":"Hello, visitor"},
+    {"id":"post_trimmed_name","method":"POST","path":"/greeting","body":"{\"name\":\" Ada \"}","expectedStatus":200,"expectedBody":"Hello, Ada"},
+    {"id":"post_blank_name","method":"POST","path":"/greeting","body":"{\"name\":\" \"}","expectedStatus":400},
+    {"id":"post_missing_name","method":"POST","path":"/greeting","body":"{}","expectedStatus":400},
+    {"id":"unknown_route","method":"GET","path":"/not-a-route","expectedStatus":404}
+  ]
+}
